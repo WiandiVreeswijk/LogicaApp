@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
+        android:id="@+id/TableLayout"
         android:layout_width="395dp"
         android:layout_height="343dp"
         android:layout_marginStart="8dp"
@@ -85,11 +86,11 @@
                 android:textSize="36sp" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/EditTextFirstAnswer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|textCapCharacters"
                 android:textAlignment="center"
                 android:textSize="36sp" />
         </TableRow>
@@ -115,11 +116,11 @@
                 android:textSize="36sp" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/EditTextSecondAnswer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|textCapCharacters"
                 android:textAlignment="center"
                 android:textSize="36sp" />
         </TableRow>
@@ -145,11 +146,11 @@
                 android:textSize="36sp" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/EditTextThirdAnswer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|textCapCharacters"
                 android:textAlignment="center"
                 android:textSize="36sp" />
         </TableRow>
@@ -175,14 +176,27 @@
                 android:textSize="36sp" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/EditTextFourthAnswer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|textCapCharacters"
                 android:textAlignment="center"
                 android:textSize="36sp" />
         </TableRow>
     </TableLayout>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="236dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Submit"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TableLayout"
+        app:layout_constraintStart_toStartOf="@+id/TableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/TableLayout" />
 
 </android.support.constraint.ConstraintLayout>
